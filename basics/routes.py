@@ -3,7 +3,7 @@ from flask import Flask, render_template ,url_for
 
 
 app =Flask(__name__)
-app.config['secret_key']='2ef68a4e307f133dbdf45325c96803a9'
+app.config['secret_key']='change-me'
 
 @app.route("/")
 def home():
