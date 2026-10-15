@@ -12,6 +12,8 @@ def login():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
+        if not username or not password :
+           return "Fill the both fields"
         return f"Welcome, {username}"
 
     return """
